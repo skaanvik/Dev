@@ -6,7 +6,7 @@ var SqlResult = (function () {
     }
     SqlResult.prototype.errorMessage = function () {
         if (this.error) {
-            return this.error.MESSAGE;
+            return this.error.message;
         }
         else {
             return "";

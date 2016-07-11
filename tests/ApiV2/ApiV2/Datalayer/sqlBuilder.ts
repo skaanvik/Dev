@@ -7,7 +7,7 @@ class SqlResult {
     data: any;
     errorMessage(): string{
         if (this.error) {
-            return this.error.MESSAGE;
+            return this.error.message;
         } else
         {
             return "";
