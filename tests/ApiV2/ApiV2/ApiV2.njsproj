@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ApiV2</Name>
+    <RootNamespace>ApiV2</RootNamespace>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>23f3a7c0-0694-4dbb-b33f-c7dd3d0b3404</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="Datalayer\datamodel.js" />
+    <Compile Include="public\api-docs\lang\en.js" />
+    <Compile Include="public\api-docs\lang\es.js" />
+    <Compile Include="public\api-docs\lang\fr.js" />
+    <Compile Include="public\api-docs\lang\geo.js" />
+    <Compile Include="public\api-docs\lang\it.js" />
+    <Compile Include="public\api-docs\lang\ja.js" />
+    <Compile Include="public\api-docs\lang\pl.js" />
+    <Compile Include="public\api-docs\lang\pt.js" />
+    <Compile Include="public\api-docs\lang\ru.js" />
+    <Compile Include="public\api-docs\lang\tr.js" />
+    <Compile Include="public\api-docs\lang\translator.js" />
+    <Compile Include="public\api-docs\lang\zh-cn.js" />
+    <Compile Include="public\api-docs\lib\backbone-min.js" />
+    <Compile Include="public\api-docs\lib\handlebars-2.0.0.js" />
+    <Compile Include="public\api-docs\lib\highlight.9.1.0.pack.js" />
+    <Compile Include="public\api-docs\lib\highlight.9.1.0.pack_extended.js" />
+    <Compile Include="public\api-docs\lib\jquery-1.8.0.min.js" />
+    <Compile Include="public\api-docs\lib\jquery.ba-bbq.min.js" />
+    <Compile Include="public\api-docs\lib\jquery.slideto.min.js" />
+    <Compile Include="public\api-docs\lib\jquery.wiggle.min.js" />
+    <Compile Include="public\api-docs\lib\js-yaml.min.js" />
+    <Compile Include="public\api-docs\lib\jsoneditor.min.js" />
+    <Compile Include="public\api-docs\lib\lodash.min.js" />
+    <Compile Include="public\api-docs\lib\marked.js" />
+    <Compile Include="public\api-docs\lib\object-assign-pollyfill.js" />
+    <Compile Include="public\api-docs\lib\swagger-oauth.js" />
+    <Compile Include="public\api-docs\swagger-ui.js" />
+    <Compile Include="public\api-docs\swagger-ui.min.js" />
+    <Compile Include="routes\category.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\swagger.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Compile Include="routes\utils.js" />
+    <Content Include="package.json" />
+    <Content Include="public\api-docs\css\print.css" />
+    <Content Include="public\api-docs\css\reset.css" />
+    <Content Include="public\api-docs\css\screen.css" />
+    <Content Include="public\api-docs\css\style.css" />
+    <Content Include="public\api-docs\css\typography.css" />
+    <Content Include="public\api-docs\fonts\DroidSans-Bold.ttf" />
+    <Content Include="public\api-docs\fonts\DroidSans.ttf" />
+    <Content Include="public\api-docs\images\collapse.gif" />
+    <Content Include="public\api-docs\images\expand.gif" />
+    <Content Include="public\api-docs\images\explorer_icons.png" />
+    <Content Include="public\api-docs\images\favicon-16x16.png" />
+    <Content Include="public\api-docs\images\favicon-32x32.png" />
+    <Content Include="public\api-docs\images\favicon.ico" />
+    <Content Include="public\api-docs\images\logo_small.png" />
+    <Content Include="public\api-docs\images\pet_store_api.png" />
+    <Content Include="public\api-docs\images\throbber.gif" />
+    <Content Include="public\api-docs\images\wordnik_api.png" />
+    <Content Include="public\api-docs\index.html" />
+    <Content Include="public\api-docs\o2c.html" />
+    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="README.md" />
+    <Content Include="typings.json" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\error.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Datalayer\" />
+    <Folder Include="public\" />
+    <Folder Include="public\api-docs\" />
+    <Folder Include="public\api-docs\css\" />
+    <Folder Include="public\api-docs\fonts\" />
+    <Folder Include="public\api-docs\images\" />
+    <Folder Include="public\api-docs\lang\" />
+    <Folder Include="public\api-docs\lib\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\debug\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\morgan\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="typings\globals\stylus\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Datalayer\datalayer.ts" />
+    <TypeScriptCompile Include="Datalayer\datamodelUtils.ts" />
+    <TypeScriptCompile Include="Datalayer\sqlBuilder.ts" />
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,2 @@
+C:\Dev\tests\ApiV2\ApiV2\obj\Debug\ApiV2.njsprojResolveAssemblyReference.cache
+C:\Dev\tests\ApiV2\ApiV2\bin\Microsoft.NodejsTools.WebRole.dll
